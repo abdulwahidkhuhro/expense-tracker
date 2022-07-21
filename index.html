@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-container">
+            <p id="title">Expense Tracker</p>
+            <p id="description">Add A New Item:</p>
+        </div>
+
+        <div class="data">
+            <div id="name-input-container">
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input" placeholder="Where was the expense made?">
+            </div>
+            <div id="date-amount-container">
+                <label for="date-input">Date:</label>
+                <input type="date" id="date-input">
+                <label for="amount-input">Amount:</label>
+                <input type="number" id="amount-input">
+            </div>
+        </div>
+
+        <div class="add-expense-btn-container">
+            <button id="add-expense">Add Expense</button>
+        </div>
+
+        <div class="details">
+            <table id="expense-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+                
+                <tr id="empty-row">
+                    <td colspan="3">No expense added yet!</td>
+                </tr>
+
+                <!-- <tr id="data-row">
+                    <td id="cell-zero"></td>
+                    <td id="cell-one"></td>
+                    <td id="cell-two">
+                        <div class="cell-two-container">
+                            <p id="cell-two-data" ></p>
+                            <button id="deleteButton">x</button>
+                        </div>
+                    </td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
